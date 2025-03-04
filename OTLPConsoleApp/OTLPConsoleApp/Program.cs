@@ -14,6 +14,7 @@ namespace OTLPConsoleApp
 
             var loggerFactory = LoggerFactory.Create(builder =>
             {
+                builder.SetMinimumLevel(LogLevel.Trace);
                 builder.AddOpenTelemetry(logging =>
                 {
                     logging.AddOtlpExporter((exporterOptions, processorOptions) =>

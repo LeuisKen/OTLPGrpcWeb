@@ -7,16 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Grpc.AspNetCore" Version="2.57.0" />
-    <PackageReference Include="Grpc.AspNetCore.Web" Version="2.66.0" />
-    <PackageReference Include="Grpc.Tools" Version="2.67.0">
+    <PackageReference Include="Grpc.AspNetCore" Version="2.67.0" />
+    <PackageReference Include="Grpc.Tools" Version="2.70.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
   </ItemGroup>
 
   <ItemGroup>
-    <Protobuf Include="**/*.proto" Access="internal" GrpcServices="Server" >
+    <Protobuf Include="**/*.proto" Access="internal" GrpcServices="Server">
       <ProtoRoot>Protos</ProtoRoot>
     </Protobuf>
   </ItemGroup>
